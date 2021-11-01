@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me Project</title>
+    <style>
+      body{
+        background-color: #a2baa6;
+        font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+        font-size: 20px;
+        text-align: center;
+        border: 5px solid palegoldenrod; 
+      }
+      h1{
+        color: #343a52;
+      }
+      p{
+        color: #343a52;
+      }
+      .button{
+        background-color: rgb(231, 222, 241);
+        font-size: 15px;
+        border-radius: 4px;
+        transition-duration: 0.4s;
+      }
+      .button:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color:rgb(203, 192, 216);
+      }
+    </style>
+    <script>
+        function hobbiesInfo(){
+          var hobbiesInfo;
+
+          hobbiesInfo = "I like reading, baking, and hanging out with my friends. <br>";
+          hobbiesInfo += "- I like the thriller, fantasy, and romance genres. <br>";
+          hobbiesInfo += "- My favorite things to bake are cakes.  <br><br>";
+
+          document.getElementById('infoId').innerHTML = hobbiesInfo;
+        }
+
+        function goalInfo(){
+          var goalInfo;
+
+          goalInfo = "";
+          goalInfo += "My main goal right now is to get good grades <br> and get into a major I'm interested in. <br>";
+          goalInfo += "I'm currently interested in biology and hope to get a career involved in it. <br>";
+          goalInfo += "Some small goals I have: <br>";
+          goalInfo += "- watch Squid Game <br>";
+          goalInfo += "- keep my grades up <br>";
+          goalInfo += "- read more books <br><br>";
+
+          document.getElementById('infoId').innerHTML = goalInfo;
+        }
+
+        function favoriteInfo(){
+          var favoriteInfo;
+
+          favoriteInfo = "";
+          favoriteInfo += "My favorite... <br>";
+          favoriteInfo += "- Number: 13 <br>";
+          favoriteInfo += "- Word: melancholy <br>";
+          favoriteInfo += "- Subject: science <br>";
+          favoriteInfo += "- Food: pasta <br><br>";
+
+          document.getElementById('infoId').innerHTML = favoriteInfo;
+        }
+
+    </script>
+    </head>
+    <body>
+    <br>
+    About Me <3
+    <h1>
+      Valeria T. Petryshchuk</h1>
+      <img src="watsonsleeping.jpg" width=300 height=500>
+      <p>
+        ^ <br>
+        My cat   /ᐠ_ ꞈ _ᐟ\ <br>
+        (Watson)
+      </p>
+      <input type="button" value="My Hobbies" onClick="hobbiesInfo()" class="button">
+      <input type="button" value="My Future Goals" onClick="goalInfo()" class="button">
+      <input type="button" value="My Favorites" onClick="favoriteInfo()" class="button"> <br> <br>
+      <div id = 'infoId'></div>
+    </body>
+</html>
